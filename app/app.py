@@ -19,13 +19,11 @@ def posts():
     return dumps(_items)
 
 def insert():
-    post = {"author": "Vista",
-    "text": "My first blog post!",
-    "tags": ["mongodb", "python", "pymongo"],
+    post = {"employee": "manaal",
+    "country": "india",
     "date": datetime.datetime.utcnow()}
-    post2={"author": "Jordan Peterson",
-    "text": "12 rules for life",
-    "tags": ["Philosophy", "Lobsters", "pymongo"],
+    post2={"employee": "abcd",
+    "country": "India",
     "date": datetime.datetime.utcnow()}
     db.posts.insert_one(post)
     db.posts.insert_one(post2)
